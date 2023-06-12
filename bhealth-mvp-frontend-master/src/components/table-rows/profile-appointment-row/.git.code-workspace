@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": ".git",
+			"path": "../../../../../itrackerExample/.git"
+		},
+		{
+			"path": "../../../../../recruiter_app"
+		},
+		{
+			"path": "../../../../../candidate_app"
+		},
+		{
+			"path": "../../../../../workingStaff/proj"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {}
+}

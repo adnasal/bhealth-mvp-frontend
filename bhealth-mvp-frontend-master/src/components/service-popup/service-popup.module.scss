@@ -1,0 +1,72 @@
+.uploadPopup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.backdrop {
+    background: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    max-width: 360px;
+    padding-bottom: 39px;
+    border-radius: 4px;
+    background-color: var(--bg-input);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: auto;
+    z-index: 12;
+    padding: 25px;
+
+    .popupHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            font-weight: bold;
+        }
+
+        .closeBtn {
+            cursor: pointer;
+            font-weight: bold;
+            color: #F16063;
+        }
+    }
+
+    .popupBody {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        gap: 18px;
+        align-items: center;
+
+        .text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 500;
+
+            b {
+                font-weight: bold;
+            }
+        }
+
+        .svg {}
+    }
+
+    @media(max-width: 800px) {
+        max-width: 90%;
+    }
+}

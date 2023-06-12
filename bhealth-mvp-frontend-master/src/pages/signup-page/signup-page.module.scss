@@ -1,0 +1,11 @@
+.signUpPage {
+    width: 100%;
+    max-width: 898px;
+    margin: 180px auto;
+    padding: 0 16px;
+
+    @media(max-width: 700px) {
+        margin: 88px auto;
+        margin-top: 130px;
+    }
+}

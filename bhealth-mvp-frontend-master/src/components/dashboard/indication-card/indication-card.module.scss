@@ -1,0 +1,95 @@
+.indicationCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 27px 24px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    max-width: 255px;
+    flex-grow: 1;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+    filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+
+    @media(max-width: 1300px) {
+        min-width: 255px;
+    }
+
+    @media(max-width: 1100px) {
+        padding: 27px 8px;
+        min-width: unset;
+    }
+
+    @media(max-width: 1070px) {
+        padding: 27px 24px;
+        max-width: unset;
+        width: 45%;
+    }
+
+    @media(max-width: 480px) {
+        padding: 8px;
+    }
+}
+
+.imageContainer {
+    height: 46px;
+    width: 46px;
+    border-radius: 8px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.appointments {
+        background: #FFEEF1;
+    }
+
+    &.newAppointments {
+        background: #E1E8FF;
+    }
+
+    &.growth {
+        background: #FFEDE3;
+    }
+
+    &.staff {
+        background: #DEFFEE;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7A7A9D;
+    margin-bottom: 1px;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.numberMain {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 136.52%;
+    color: #16192C;
+    margin-right: 12px;
+}
+
+.numberSecondary {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #66CB9F;
+
+    &.negative {
+        color: #F16063;
+    }
+}

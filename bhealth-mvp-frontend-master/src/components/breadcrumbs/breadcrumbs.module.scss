@@ -1,0 +1,38 @@
+.breadCrumbs {
+    margin-bottom: 24px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media(max-width: 1200px) {
+        margin-left: 16px;
+    }
+}
+
+.breadcrumb {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 116%;
+    color: #dd9500;
+
+    &.active {
+        color: #647280;
+    }
+
+    @media(max-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.arrow {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 116%;
+    color: #647280;
+    margin: 0 8px;
+
+    @media(max-width: 1200px) {
+        font-size: 16px;
+    }
+}

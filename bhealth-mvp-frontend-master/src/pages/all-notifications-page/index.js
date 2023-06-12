@@ -1,0 +1,1 @@
+export { default as AllNotificationsPage } from './all-notifications-page';

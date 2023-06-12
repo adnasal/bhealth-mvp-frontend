@@ -1,0 +1,114 @@
+.cardContainer {
+    width: 372px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    filter: drop-shadow(0 0 0.2rem rgba(13, 2, 4, 20%));
+    padding: 9px 9px 40px 9px;
+    border-radius: 9px;
+
+    @media(max-width: 890px) {
+        padding: 7px 7px 25px 7px;
+    }
+
+    @media(max-width: 700px) {
+        padding: 9px 9px 40px 9px;
+        width: 90%;
+    }
+}
+
+.imgContainer {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 24px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.contentContainer {
+    padding: 0 17px;
+}
+
+.cardTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.05em;
+    color: var(--title-text);
+    line-height: 135%;
+    margin-bottom: 17px;
+
+    @media(max-width: 700px) {
+        font-size: 20px;
+    }
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 34px;
+
+    & li {
+        margin-bottom: 17px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    & li:last-child {
+        margin-bottom: 0;
+    }
+
+    @media(max-width: 700px) {
+        & li {
+            font-size: 16px;
+        }
+    }
+}
+
+.svg {
+    margin-right: 10px;
+}
+
+.button,
+.buttonBook {
+    width: 100%;
+    max-width: 152px;
+    padding: 17px;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+    @media(max-width: 890px) {
+        padding: 12px;
+    }
+
+    @media(max-width: 700px) {
+        padding: 17px;
+        font-size: 16px;
+    }
+
+    @media(max-width: 420px) {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+.buttonBook {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btnRow {
+    display: flex;
+    gap: 17px;
+}

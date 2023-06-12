@@ -1,0 +1,223 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 5%);
+    z-index: 10;
+    background: var(--bg-primary);
+    height: var(--header-desktop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+    @media(max-width: 900px) {
+        height: var(--header-mobile);
+    }
+}
+
+.transparent {
+    box-shadow: none;
+    background: transparent;
+
+    & .logoContainer {
+        max-width: 208px;
+    }
+
+    & .page {
+        color: white;
+    }
+
+    @media(max-width: 900px) {
+        & .logoContainer {
+            max-width: 175px;
+        }
+
+        & .page {
+            color: var(--titleText);
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    max-width: 1152px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.logoContainer {
+    width: 100%;
+    max-width: 177px;
+
+    & img {
+        width: 100%;
+    }
+
+    @media(max-width: 900px) {
+        max-width: 150px;
+    }
+}
+
+.navigationContainer {
+    display: block;
+
+    @media(max-width: 900px) {
+        display: none;
+    }
+}
+
+.contentWrapper {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 12;
+    background: var(--bg-primary);
+    padding: 16px;
+    height: 100%;
+    width: 350px;
+    transition: right 0.3s;
+
+    &.open {
+        right: 0;
+    }
+
+    @media(max-width: 500px) {
+        width: 70%;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 900px) {
+        background: transparent;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.page {
+    font-size: 16px;
+    line-height: 147%;
+    color: var(--titleText);
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    @media(max-width: 900px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.activePage {
+    font-size: 16px;
+    line-height: 147%;
+    color: var(--primary);
+    font-weight: 700;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    @media(max-width: 900px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+}
+
+.signedContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.burgerContainer {
+    display: none;
+
+    @media(max-width: 900px) {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 22px;
+        max-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            background: var(--primary);
+            width: 100%;
+            height: 4px;
+            border-radius: 5px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            background: var(--primary);
+            width: 100%;
+            height: 4px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.stick {
+    width: 100%;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+.sidePanel {
+    display: none;
+
+    @media(max-width: 900px) {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+    }
+}
+
+.backdrop {
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}

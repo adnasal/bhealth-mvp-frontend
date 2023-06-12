@@ -1,0 +1,115 @@
+.notificationsPopup {
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 8px 64px rgba(181, 193, 193, 0.5));
+    position: absolute;
+    bottom: -70px;
+    left: -70px;
+
+    @media (max-width: 900px) {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 11;
+        top: 0;
+        left: 0;
+        filter: none;
+    }
+}
+
+.backdrop {
+    display: none;
+
+    @media (max-width: 900px) {
+        display: block;
+        background: rgba(0, 0, 0, 0.45);
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+    }
+}
+
+.contentContainer {
+    height: fit-content;
+    width: fit-content;
+
+    @media (max-width: 900px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 12;
+    }
+}
+
+.popupBox {
+    width: 352px;
+    padding: 26px 24px 24px;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 4px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: inherit;
+        border: inherit;
+        top: calc(-1% - 8px);
+        left: calc(50% - 13px);
+        transform: rotate(135deg);
+        border-radius: 0 0 0 0.4em;
+    }
+
+    @media(max-width: 900px) {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.notificationHeading {
+    font-weight: 700;
+    color: #7a7a9d;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.clearNotification {
+    font-weight: 700;
+    color: #f4888a;
+    font-size: 10px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 38px;
+        background-color: #f4888a;
+        bottom: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.notificationButton {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}

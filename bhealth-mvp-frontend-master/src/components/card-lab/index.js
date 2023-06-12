@@ -1,0 +1,1 @@
+export { default as CardLab } from './card-lab';

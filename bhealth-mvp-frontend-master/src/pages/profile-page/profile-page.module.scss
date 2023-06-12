@@ -1,0 +1,132 @@
+.profilePage {
+    width: 100%;
+    max-width: 1200px;
+    margin: 147px auto 58px auto;
+    padding: 0 16px;
+}
+
+.topSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 85px;
+
+    @media(max-width: 600px) {
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+}
+
+.imgContainer {
+    height: 394px;
+    width: 394px;
+    border-radius: 50%;
+    margin-right: 73px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media(max-width: 890px) {
+        height: 40%;
+        width: 40%;
+        margin-right: 32px;
+    }
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147%;
+    color: var(--darkText);
+    margin-bottom: 31px;
+
+    @media(max-width: 600px) {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    @media(max-width: 420px) {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147%;
+    color: rgba(39, 39, 46, 0.5);
+
+    &:first-of-type {
+        margin-bottom: 6px;
+    }
+
+    &:last-of-type {
+        margin-top: 16px;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 16px;
+
+        &:last-of-type {
+            margin-top: 8px;
+        }
+    }
+
+    @media(max-width: 420px) {
+        font-size: 14px;
+        margin-bottom: 6px;
+
+        &:last-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147%;
+    color: var(--darkText);
+    margin-bottom: 35px;
+
+    @media(max-width: 600px) {
+        font-size: 16px;
+        line-height: 127%;
+        margin-bottom: 24px;
+    }
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    color: #ffffff;
+    background: var(--primary);
+    width: 91px;
+    height: 32px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 26px;
+    cursor: pointer;
+}

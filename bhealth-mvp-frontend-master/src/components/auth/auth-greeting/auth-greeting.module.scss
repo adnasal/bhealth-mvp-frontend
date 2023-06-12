@@ -1,0 +1,42 @@
+.authGreeting {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 36px;
+    padding: 5px 0;
+    margin-bottom: 32px;
+    margin: 0 auto;
+
+    & img {
+        width: 100%;
+    }
+
+    @media(max-width: 700px) {
+        max-width: 28px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 116%;
+    color: var(--titleText);
+    text-align: center;
+    margin-bottom: 18px;
+
+    @media(max-width: 700px) {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 147%;
+    text-align: center;
+    color: var(--simpleText);
+}

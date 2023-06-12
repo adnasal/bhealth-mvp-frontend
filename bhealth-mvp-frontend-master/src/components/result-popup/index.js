@@ -1,0 +1,1 @@
+export { default as ResultPopup } from './result-popup';

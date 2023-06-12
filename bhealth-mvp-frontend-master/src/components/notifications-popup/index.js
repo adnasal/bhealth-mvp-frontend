@@ -1,0 +1,1 @@
+export { default as NotificationsPopup } from './notifications-popup';

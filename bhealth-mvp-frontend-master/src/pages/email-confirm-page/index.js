@@ -1,0 +1,1 @@
+export { default as EmailConfirmPage } from './email-confirm-page';

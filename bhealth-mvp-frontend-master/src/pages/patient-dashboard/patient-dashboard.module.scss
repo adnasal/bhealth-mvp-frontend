@@ -1,0 +1,52 @@
+.adminDashboard {
+    width: 100%;
+    height: 100%;
+    max-width: 1420px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: 250px;
+
+    @media(max-width: 1100px) {
+        margin-left: 0;
+        z-index: 1;
+    }
+}
+
+.dataSection {
+    padding: 30px;
+    background: var(--bg-primary);
+
+    @media(max-width: 1100px) {
+        padding: 16px;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147%;
+    color: var(--darkText);
+}
+
+.rowAction {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: var(--primary);
+    cursor: pointer;
+}

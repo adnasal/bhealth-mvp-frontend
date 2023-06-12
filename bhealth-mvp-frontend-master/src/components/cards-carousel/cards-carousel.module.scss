@@ -1,0 +1,49 @@
+.nextArrow {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        height: 30px;
+        width: 30px;
+        border-top: 3px solid var(--primary);
+        border-right: 3px solid var(--primary);
+        transform: rotate(45deg);
+    }
+}
+
+.prevArrow {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        height: 30px;
+        width: 30px;
+        border-top: 3px solid var(--primary);
+        border-left: 3px solid var(--primary);
+        transform: rotate(-45deg);
+    }
+}

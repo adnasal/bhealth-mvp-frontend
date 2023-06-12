@@ -1,0 +1,1 @@
+export { default as IndicationCard } from './indication-card';

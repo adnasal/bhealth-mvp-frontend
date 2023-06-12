@@ -1,0 +1,136 @@
+.editPersonal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media(max-width: 700px) {
+        max-width: 375px;
+    }
+
+    @media(max-width: 420px) {
+        max-width: 325px;
+    }
+}
+
+.fieldsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 890px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.button {
+    width: 100%;
+    max-width: 425px;
+    padding: 16px;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    margin: 0 auto 32px auto;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 32px;
+
+    @media(max-width: 700px) {
+        padding: 10px;
+        margin-top: 0;
+    }
+}
+
+.imgContainer {
+    width: 18px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.dateContainer {
+    width: 100%;
+    max-width: 425px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.dateTitle {
+    color: var(--titleText);
+    font-weight: 700;
+    font-size: 14.4px;
+    line-height: 116%;
+    margin-bottom: 8px;
+}
+
+.dateContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--simpleText);
+    background: var(--bg-light);
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    & input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        z-index: 2;
+        background: transparent;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        color: transparent;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    &.errored {
+        border: 1px solid var(--error);
+    }
+
+    @media(max-width: 700px) {
+        padding: 6px 12px;
+
+    }
+}
+
+.dateValue {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 147%;
+    color: var(--simpleText);
+}
+
+.errorText {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    font-size: 14px;
+    color: var(--error);
+}

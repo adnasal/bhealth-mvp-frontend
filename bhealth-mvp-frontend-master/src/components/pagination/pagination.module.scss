@@ -1,0 +1,117 @@
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 601px;
+    margin: 0 auto;
+
+    @media(max-width: 600px) {
+        gap: 12px;
+    }
+}
+
+.page {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    color: rgba(46, 57, 63, 0.6);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #eaeaee;
+    border-radius: 3px;
+
+    & a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.active {
+        border: 1px solid var(--primary);
+    }
+}
+
+.pageNavigate {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(46, 57, 63, 0.6);
+    text-transform: uppercase;
+
+    &:first-child {
+        margin-right: 8px;
+    }
+
+    &:last-child {
+        margin-left: 8px;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 12px;
+
+        &:first-child {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.break {
+    color: rgba(46, 57, 63, 0.6);
+}
+
+.active {
+    background: var(--primary);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 25px;
+    margin-bottom: 51px;
+
+    @media(max-width: 1200px) {
+        gap: 35px 15px;
+        justify-content: center;
+    }
+
+    @media(max-width: 1100px) {
+        justify-content: space-around;
+        gap: 25px 0;
+    }
+
+    @media(max-width: 800px) {
+        & div {
+            width: 48%;
+
+            & div {
+                width: 100%;
+            }
+        }
+    }
+
+    @media(max-width: 700px) {
+        & div {
+            width: 90%;
+
+            & div {
+                width: 100%;
+            }
+        }
+    }
+}

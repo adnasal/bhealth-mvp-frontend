@@ -1,0 +1,108 @@
+.sectionBottom {
+    position: relative;
+    background: var(--bg-primary);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 57px 16px 74px;
+    margin-top: 95px;
+
+    .aboutsection {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+
+        @media(max-width: 900px) {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.leftcolumn {
+    width: 100%;
+    max-width: calc(100% - 400px);
+
+    @media(max-width: 900px) {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        transform: scale(1.2);
+
+        @media(max-width: 900px) {
+            transform: none;
+        }
+    }
+}
+
+.rightcolumn {
+    max-width: 400px;
+    width: 100%;
+
+    @media(max-width: 900px) {
+        max-width: 100%;
+    }
+
+    h6 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 132%;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'liga' off;
+        color: var(--primary);
+        margin-bottom: 5px;
+
+        @media(max-width: 700px) {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 110%;
+        letter-spacing: 0.005em;
+        color: #0E0E0E;
+        margin-bottom: 8px;
+
+        @media(max-width: 700px) {
+            font-size: 40px;
+        }
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 135%;
+        text-align: justify;
+        letter-spacing: 0.2em;
+        color: #999191;
+        margin-bottom: 8px;
+    }
+}
+
+
+.ctcBtn {
+    width: 194px;
+    height: 49px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--bg-primary);
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    margin: auto;
+    text-transform: uppercase;
+
+    @media(max-width: 700px) {
+        height: 35px;
+        font-size: 14px;
+        width: 130px;
+    }
+}

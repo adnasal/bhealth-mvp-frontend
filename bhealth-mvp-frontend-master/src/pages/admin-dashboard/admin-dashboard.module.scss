@@ -1,0 +1,108 @@
+.adminDashboard {
+    width: 100%;
+    height: 100%;
+    max-width: 1420px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: 250px;
+
+    @media(max-width: 1100px) {
+        margin-left: 0;
+        z-index: 1;
+    }
+}
+
+.dataSection {
+    padding: 30px;
+    background: var(--bg-primary);
+
+    @media(max-width: 1350px) {
+        padding: 16px 8px;
+    }
+
+    @media(max-width: 1100px) {
+        padding: 16px;
+    }
+
+    @media(max-width: 480px) {
+        padding: 16px 8px;
+    }
+}
+
+.indicationsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media(max-width: 1300px) {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    @media(max-width: 1100px) {
+        gap: 5px;
+    }
+
+    @media(max-width: 1070px) {
+        gap: 15px;
+    }
+
+    @media(max-width: 480px) {
+        gap: 5px;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 147%;
+    color: var(--darkText);
+}
+
+.rowAction {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.appointmentsContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+
+    @media(max-width: 1300px) {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    @media(max-width: 1100px) {
+        gap: 5px;
+    }
+
+    @media(max-width: 1070px) {
+        gap: 15px;
+    }
+
+    @media(max-width: 480px) {
+        gap: 5px;
+    }
+}

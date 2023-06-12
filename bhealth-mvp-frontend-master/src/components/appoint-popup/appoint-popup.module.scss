@@ -1,0 +1,320 @@
+.wrapper {
+    width: 100%;
+    z-index: 11;
+
+    @media(max-width: 900px) {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.backdrop {
+    display: none;
+
+    @media(max-width: 900px) {
+        display: block;
+        background: rgba(0, 0, 0, 0.45);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+    }
+}
+
+.popupContainer {
+    width: 670px;
+    border-radius: 4px;
+    background: #ffff;
+    padding-bottom: 40px;
+    position: absolute;
+    top: -180px;
+    left: -665px;
+    box-shadow: 0px 8px 64px rgba(181, 193, 193, 0.5);
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: inherit;
+        border: inherit;
+        top: calc(58% - 8px);
+        left: calc(100% - 13px);
+        clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+        transform: rotate(225deg);
+        border-radius: 0 0 0 0.4em;
+    }
+
+    @media(max-width: 900px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 12;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @media(max-width: 700px) {
+        width: 90%;
+        padding-bottom: 16px;
+    }
+}
+
+.titleBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 0 40px;
+
+    @media(max-width: 700px) {
+        margin: 16px 0;
+    }
+
+    @media(max-width: 500px) {
+        padding: 0 16px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: var(--titleText);
+
+    @media(max-width: 500px) {
+        font-size: 16px;
+    }
+}
+
+.status {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffff;
+    padding: 4px 16px;
+    background: #f7936f;
+    border-radius: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+
+    &[data-status='Postponed'] {
+        background: #f7936f;
+    }
+
+    &[data-status='Confirmed'] {
+        background: #1BD2A4;
+    }
+}
+
+.border {
+    border-bottom: 1px solid #e1e7ef;
+    margin-bottom: 24px;
+}
+
+.infoBox {
+    padding: 0 40px;
+
+    @media(max-width: 700px) {
+        padding: 0 16px;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 700px) {
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    @media(max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 700px) {
+        width: 49%;
+    }
+
+    @media(max-width: 500px) {
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.infotitle {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #8f9eb5;
+    text-transform: uppercase;
+    line-height: 116%;
+    color: var(--titleText);
+}
+
+.infoSubtitle {
+    font-weight: 700;
+    font-size: 14.4px;
+    line-height: 116%;
+    color: var(--primary);
+    margin-bottom: 60px;
+    line-height: 28px;
+}
+
+.patientInfo {
+    display: flex;
+    height: 48px;
+    margin-bottom: 40px;
+
+    @media(max-width: 500px) {
+        margin-bottom: 16px;
+    }
+}
+
+.photoImg {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 16px;
+
+    & img {
+        width: 100%;
+    }
+
+    @media(max-width: 600px) {
+        margin-right: 8px;
+    }
+}
+
+.patientInfoCol {
+    display: flex;
+    flex-direction: column;
+
+    & .title {
+        margin-bottom: 4px;
+    }
+}
+
+.pcrTest {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.7px;
+    color: var(--primary);
+}
+
+.buttonCall {
+    background-color: var(--primary);
+    width: 283px;
+    padding: 16px 77px;
+    box-shadow: 0px 16px 40px rgba(20, 153, 152, 0.1);
+    border-radius: 4px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.patientDateCol {
+    display: flex;
+    margin-bottom: 60px;
+
+    @media(max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+}
+
+.dateInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:first-child {
+        margin-right: 24px;
+    }
+
+    @media(max-width: 600px) {
+        &:first-child {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+    border-radius: 50%;
+    background: #1499981a;
+    margin-right: 8px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.calendarTitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.7px;
+    color: var(--simpleText);
+}
+
+.buttonCancel {
+    background-color: #f16063;
+    width: 283px;
+    padding: 17px 72px;
+    box-shadow: 0px 16px 40px rgba(20, 153, 152, 0.1);
+    border-radius: 4px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttonCall,
+.buttonCancel {
+    @media(max-width: 700px) {
+        width: 100%;
+    }
+}

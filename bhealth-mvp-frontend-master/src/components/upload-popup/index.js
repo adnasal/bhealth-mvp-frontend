@@ -1,0 +1,1 @@
+export { default as UploadPopup } from './upload-popup';

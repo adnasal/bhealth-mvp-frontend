@@ -1,0 +1,217 @@
+.uploadPopup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.backdrop {
+    background: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    max-width: 660px;
+    padding-bottom: 39px;
+    border-radius: 4px;
+    background-color: var(--bg-input);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: auto;
+    z-index: 12;
+
+    @media(max-width: 800px) {
+        max-width: 90%;
+    }
+}
+
+.titleBox {
+    padding: 0 28px;
+}
+
+.uploadTitle {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: var(--titleText);
+}
+
+.border {
+    border-bottom: 1px solid #e1e7ef;
+    margin-bottom: 46px;
+}
+
+.infoBox {
+    padding: 0 40px;
+}
+
+.patientInfoCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.patientInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+.photoImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 20px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+    color: var(--titleText);
+}
+
+.pcrTest {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 116%;
+    font-size: 15px;
+    color: var(--primary);
+}
+
+.uploadForm {
+    padding: 0 30px;
+
+    label {
+        display: block;
+        color: #2C3E50;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .appointmentdate {
+        margin-bottom: 22px;
+    }
+
+    input,
+    textarea {
+        max-width: 425px;
+        width: 100%;
+        background-color: #1499981A;
+        padding: 10px 12px;
+
+        &::placeholder {
+            color: #3E4D5C !important;
+        }
+    }
+
+    @media(max-width: 520px) {
+        padding: 0 16px;
+    }
+}
+
+input[type=file] {
+    display: none;
+}
+
+.file {
+    display: block;
+    position: relative;
+    width: 244px;
+    border-radius: 35px;
+    border: 1px solid #8F9EB5;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.labelFile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 24px 13px 24px;
+}
+
+.fileTitle {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #8F9EB5;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.textareaForm {
+
+
+    @media(max-width: 800px) {}
+}
+
+.textareaForm::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 132%;
+    color: #8F9EB5;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.buttonLeft,
+.buttonRigt {
+    width: 283px;
+    height: 46px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    @media(max-width: 800px) {
+        width: 190px;
+    }
+
+
+    @media(max-width: 520px) {
+        width: 48%;
+        font-size: 16px;
+    }
+}
+
+.buttonLeft {
+    background: var(--primary);
+    box-shadow: 0px 16px 40px rgba(20, 153, 152, 0.1)
+}
+
+.buttonRigt {
+    background: #F16063;
+    box-shadow: 0px 16px 40px rgba(241, 96, 99), 0.1;
+}

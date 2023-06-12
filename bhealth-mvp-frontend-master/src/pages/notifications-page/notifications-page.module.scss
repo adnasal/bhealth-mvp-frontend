@@ -1,0 +1,88 @@
+.notificationsPage {
+    width: 100%;
+    margin: 95px auto 0 auto;
+    padding: 57px 0;
+
+    @media(max-width: 700px) {
+        margin-top: 56.5px;
+    }
+}
+
+.topBox {
+    width: 100%;
+    margin: 0 auto 57px auto;
+    max-width: 1152px;
+    padding: 34px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 42px;
+
+    @media(max-width: 700px) {
+        padding: 16px;
+    }
+}
+
+.topTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.05em;
+    color: var(--titleText);
+    margin-bottom: 24px;
+}
+
+.topItems {
+    width: 100%;
+}
+
+.emptyTitle {
+    font-weight: 700;
+    font-size: 14.4px;
+    line-height: 116%;
+    color: var(--primary);
+}
+
+.bottomBox {
+    width: 100%;
+    max-width: 1152px;
+    background: #FFFFFF;
+    padding-top: 34px;
+    border-radius: 10px;
+    margin: 0 auto 42px auto;
+}
+
+.bottomTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.05em;
+    padding: 0 35px;
+    color: var(--titleText);
+}
+
+.notificationsContainer {
+    width: 100%;
+    padding-top: 50px;
+
+    @media(max-width: 700px) {
+        padding-top: 25px;
+    }
+}
+
+.button {
+    display: block;
+    height: 49px;
+    width: 152px;
+    box-shadow: 0px 16px 40px rgba(20, 153, 152, 0.1);
+    background: var(--primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto 145px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

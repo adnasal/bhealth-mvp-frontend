@@ -1,0 +1,2 @@
+This component is used to see how REDUX works with Redux toolkit + RTK query. Just import this component to some page and observe the behavior
+There is JSON server implemented as well. After running "npm start" and importing PostContainer.tsx run "json-server --watch db.json --port 5000" to see posts you can interract with

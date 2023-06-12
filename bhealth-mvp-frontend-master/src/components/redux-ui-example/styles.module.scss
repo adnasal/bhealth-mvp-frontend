@@ -1,0 +1,19 @@
+.postList {
+    width: 100%;
+    padding: 20px;
+}
+
+.post {
+    padding: 20px;
+    border: 1px solid teal;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 5px;
+    border: 1px solid teal;
+    cursor: pointer;
+}

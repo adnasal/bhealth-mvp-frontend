@@ -1,0 +1,10 @@
+.loginPage {
+    width: 100%;
+    max-width: 898px;
+    margin: 88px auto;
+    margin-top: 180px;
+
+    @media(max-width: 700px) {
+        margin-top: 130px;
+    }
+}

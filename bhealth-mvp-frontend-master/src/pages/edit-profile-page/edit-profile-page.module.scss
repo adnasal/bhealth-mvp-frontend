@@ -1,0 +1,11 @@
+.editProfilePage {
+    width: 100%;
+    max-width: 898px;
+    padding: 117px 0 216px 0;
+    margin: 95px auto 0 auto;
+
+    @media(max-width: 700px) {
+        margin-top: 56.5px;
+        padding: 60px 16px 100px 16px;
+    }
+}

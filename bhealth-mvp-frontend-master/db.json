@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 5,
+      "title": "updated 5",
+      "body": "typicode"
+    },
+    {
+      "id": 8,
+      "title": "json-server 8",
+      "body": "typicode"
+    },
+    {
+      "id": 9,
+      "title": "json-server 9",
+      "body": "typicode"
+    },
+    {
+      "id": 10,
+      "title": "json-server 10",
+      "body": "typicode"
+    },
+    {
+      "title": "new post",
+      "body": "new post",
+      "id": 12
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
