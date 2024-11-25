@@ -1,0 +1,17 @@
+.calendar--modal {
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & .input-row {
+      display: flex;
+      gap: 8px;
+      justify-content: space-evenly;
+
+      & > * {
+        flex-grow: 1;
+      }
+    }
+  }
+}
